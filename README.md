@@ -1,4 +1,4 @@
-## 基于 Github issues 的单页面静态博客 来自（https://github.com/wuhaoworld/github-issues-blog）
+## 基于 Github issues 的单页面静态博客 来自（https://github.com/wuhaoworld/github-issues-blog）感谢！
 
 玉伯的博客（https://github.com/lifesinger/lifesinger.github.com/issues ）让我第一次知道 github issues 还可以这样用 ，作者发了很多干货技术文章，让我不由得感叹 ，文章不在于形式，也不在于写在哪里，只要是好文，总不会被埋没。
 
