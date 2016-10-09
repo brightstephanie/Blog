@@ -124,3 +124,435 @@ var routes = {
 };
 var router = Router(routes);
 router.init('/');
+
+
+// index.jsx
+var React = require('react');
+var ReactDOM = require('react-dom');
+var MyButtonController = require('./components/MyButtonController');
+
+ReactDOM.render(
+<MyButtonController/>,
+    document.querySelector('#example')
+);
+
+
+var React = require('react');
+var ReactDom = require('react-dom');
+var MyButtonController = require('./components/MyButtonController');
+ReactDom.render(
+    <MyButtonController/>,
+    document.querySelector('#example')
+);
+
+// components/MyButtonController.jsx
+var React = require('react');
+var ButtonActions = require('../actions/ButtonActions');
+var MyButton = require('./MyButton');
+
+var MyButtonController = React.createClass({
+    createNewItem: function (event) {
+        ButtonActions.addNewItem('new item');
+    },
+
+    render: function() {
+        return <MyButton
+        onClick={this.createNewItem}
+        />;
+    }
+});
+
+module.exports = MyButtonController;
+
+var React = require('react');
+var ButtonActions = require('../actions/ButtonActions');
+var MyButton = require('./MyButton');
+
+var MyButtonController = React.createClass({
+    createNewItem: function (event) {
+        ButtonActions.addNewItem('new item');
+    },
+
+    render: function () {
+        return <MyButton
+        onclick={this.createNewItem}
+        />;
+    }
+});
+module.exports = MyButtonController;
+
+
+// components/MyButton.jsx
+var React = require('react');
+
+var MyButton = function(props) {
+    return <div>
+    <button onClick={props.onClick}>New Item</button>
+    </div>;
+};
+
+module.exports = MyButton;
+
+var React = require('react');
+var MyButton = function (props) {
+    return <div>
+        <button onClick={props.onClick}>New Item</button>
+        </div>;
+};
+
+module.exports = MyButton;
+
+
+// actions/ButtonActions.js
+var AppDispatcher = require('../dispatcher/AppDispatcher');
+
+var ButtonActions = {
+    addNewItem: function (text) {
+        AppDispatcher.dispatch({
+            actionType: 'ADD_NEW_ITEM',
+            text: text
+        });
+    },
+};
+
+var AppDispatcher = require('../dispatcher/AppDispatcher');
+var AooDispatcher = {
+    addNewItem: function (text) {
+        AppDispatcher.dispatch({
+            actionType: 'ADD_NEW_ITEM',
+            text: text
+        })
+    }
+}
+
+
+var Dispatcher = require('flux').Dispatcher;
+module.exports = new Dispatcher();
+
+var Dispatcher = require('flux').Dispatcher;
+module.exports = new Dispatcher();
+
+// dispatcher/AppDispatcher.js
+var ListStore = require('../stores/ListStore');
+
+AppDispatcher.register(function (action) {
+    switch(action.actionType) {
+        case 'ADD_NEW_ITEM':
+            ListStore.addNewItemHandler(action.text);
+            ListStore.emitChange();
+            break;
+        default:
+        // no op
+    }
+})
+
+var ListStore = require('../stores/ListStore');
+
+AppDispatcher.register(function (action) {
+    switch (action.actionType) {
+        case 'ADD_NEW_ITEM':
+            ListStore.addNewItemHandler(action.text);
+            ListStore.emitChange();
+            break;
+        default;
+    }
+})
+
+// stores/ListStore.js
+var ListStore = {
+    items: [],
+
+    getAll: function() {
+        return this.items;
+    },
+
+    addNewItemHandler: function (text) {
+        this.items.push(text);
+    },
+
+    emitChange: function () {
+        this.emit('change');
+    }
+};
+
+module.exports = ListStore;
+
+var ListStore = {
+    items: [],
+
+    getAll: function () {
+        return this.items;
+    },
+    addNewItemHandler: function (text) {
+        this.items.push(text);
+    },
+    emitChange: function () {
+        this.emit('Change');
+    }
+};
+module.exports = ListStore;
+
+
+// stores/ListStore.js
+var EventEmitter = require('events').EventEmitter;
+var assign = require('object-assign');
+
+var ListStore = assign({}, EventEmitter.prototype, {
+    items: [],
+
+    getAll: function () {
+        return this.items;
+    },
+
+    addNewItemHandler: function (text) {
+        this.items.push(text);
+    },
+
+    emitChange: function () {
+        this.emit('change');
+    },
+
+    addChangeListener: function(callback) {
+        this.on('change', callback);
+    },
+
+    removeChangeListener: function(callback) {
+        this.removeListener('change', callback);
+    }
+});
+
+var EventEmitter = require('events').EventEmitter;
+var assign = require('object-asign');
+var ListStore = assign({}, EventEmitter.prototype, {
+    items: [],
+    getAll: function () {
+        return this.items;
+    },
+    addNewItemHandler: function (text) {
+        this.items.push(text);
+    },
+    emitChange: function () {
+        this.emit('change');
+    },
+    addChangeListener: function (callback) {
+        this.on('change', callback);
+    }
+
+    removeChangeListener: function (callback) {
+        this.removeListener('change', callback);
+    }
+});
+
+
+// components/MyButtonController.jsx
+var React = require('react');
+var ListStore = require('../stores/ListStore');
+var ButtonActions = require('../actions/ButtonActions');
+var MyButton = require('./MyButton');
+
+var MyButtonController = React.createClass({
+    getInitialState: function () {
+        return {
+            items: ListStore.getAll()
+        };
+    },
+    componentDidMount: function() {
+        ListStore.addChangeListener(this._onChange);
+    },
+    componentWillUnmount: function() {
+        ListStore.removeChangeListener(this._onChange);
+    },
+    _onChange: function () {
+        this.setState({
+            items: ListStore.getAll()
+        });
+    },
+    createNewItem: function (event) {
+        ButtonActions.addNewItem('new item');
+    },
+    render: function() {
+        return <MyButton
+        items={this.state.items}
+        onClick={this.createNewItem}
+        />;
+    }
+});
+var MyButtonController = React.createClass({
+    getInitialState: function () {
+        return {
+            items: ListStore.getAll()
+        };
+    },
+    componentDidMount: function () {
+        ListStore.addChangeListener(this._onChange);
+    },
+    componentWillUnmount: function () {
+        ListStore.removeChangeListener(this._onChange);
+    },
+    _onChange: function () {
+        this.setState({
+            items: ListStore.getAll()
+        });
+    },
+    createNewItem: function (event) {
+       ButtonActions.addNewItem('new item');
+    },
+    render: function () {
+        return <MyButton
+        items = {this.state.items}
+        onClick={this.createNewItem}
+        />;
+    }
+})
+
+
+// components/MyButton.jsx
+var React = require('react');
+
+var MyButton = function(props) {
+    var items = props.items;
+    var itemHtml = items.map(function (listItem, i) {
+        return <li key={i}>{listItem}</li>;
+    });
+
+    return <div>
+    <ul>{itemHtml}</ul>
+    <button onClick={props.onClick}>New Item</button>
+    </div>;
+};
+
+module.exports = MyButton;
+
+var React = require('react');
+
+var MyButton = function (props) {
+    var items = props.items;
+    var itemHtml = items.map(function (listItem, i) {
+        return <li key={i}>{listItem}</li>;
+    });
+
+    return <div>
+        <ul>{itemHtml}</ul>
+        <button onClick={props.onClick}>New Item</button>
+        </div>;
+};
+
+import { createStore } from 'redux';
+const store = createStore(fn);
+
+import{createStore} from 'redux';
+const store = createStore(fn);
+const state = store.getState;
+
+const action = {
+    type: 'ADD_TODO',
+    payload: 'Learn Redux'
+};
+
+const action = {
+    type: 'ADD_TODo',
+    payload:'Learn Redux'
+};
+
+const ADD_TODO = '添加 TODO';
+
+function addTodo(text) {
+    return {
+        type: ADD_TODO,
+        text
+    }
+}
+
+const action = addTodo('Learn Redux');
+
+const ADD_TODO = '添加 TODO';
+function addTodo(text) {
+    return {
+        type: ADD_TODO,
+        text
+    }
+}
+
+import { createStore } from 'redux';
+const store = createStore(fn);
+
+store.dispatch({
+    type: 'ADD_TODO',
+    payload: 'Learn Redux'
+});
+
+import {createStore} from 'redux';
+const store = createStore(fn);
+store.dispatch({
+    type: 'ADD_TODO',
+    payload: 'Learn Redux'
+});
+
+store.dispatch(addTodo('Learn Redux'));
+
+store.dispatch(addTodo('Learn Redux'));
+
+const reducer = function (state, action) {
+    // ...
+    return new_state;
+};
+
+const reducer = function (state, action) {
+    return new_state;
+}
+
+
+const defaultState = 0;
+const reducer = (state = defaultState, action) => {
+    switch (action.type) {
+        case 'ADD':
+            return state + action.payload;
+        default:
+            return state;
+    }
+};
+
+const state = reducer(1, {
+    type: 'ADD',
+    payload: 2
+});
+
+const defaultState = 0;
+const reducer = (state = defaultState, action) => {
+    switch (action.type) {
+        case 'ADD';
+            return state + action.payload;
+        default:
+            return state;
+    }
+};
+const state = reducer(1, {
+    type: 'ADD',
+    payload: 2
+})
+
+<div id='mountNode>{{message}}</div>
+var vm = new Vue({
+    el: '#mountNode',
+    data: function () {
+        return{
+            message: 'Hello World'
+        };
+    }
+})
+
+function Vue(options) {
+    this._init(option)
+}
+
+Vue.prototype._init = function (options) {
+    options = this.$options = mergeOptions(
+        this.constructor.options,
+        options,
+        this
+    )
+    this._initState()
+    if (options.el) {
+        this.$mount(options.el)
+    }
+}
