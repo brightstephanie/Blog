@@ -3,7 +3,7 @@
   
   **node express jade webpack react mysql mongondb相关**  
   
-  0.[node+express+echarts构建图表](https://github.com/jiangwenjing/Blog/issues/1)  
+  0.[node+express+jade+echarts+mysql构建图表](https://github.com/jiangwenjing/Blog/issues/1)  
   
   1.[node+express+jade+MongoDB处理表单](https://github.com/jiangwenjing/Blog/issues/2)
 
