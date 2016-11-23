@@ -5,5 +5,5 @@
   
   0.[node+express+jade+echarts+mysql构建图表](https://github.com/jiangwenjing/Blog/issues/1)  [代码](https://github.com/jiangwenjing/node/tree/master/charts)
   
-  1.[node+express+jade+MongoDB处理表单](https://github.com/jiangwenjing/Blog/issues/2)  [代码]（https://github.com/jiangwenjing/node/tree/master/form）
+  1.[node+express+jade+MongoDB处理表单](https://github.com/jiangwenjing/Blog/issues/2) [代码](https://github.com/jiangwenjing/node/tree/master/form)
 
