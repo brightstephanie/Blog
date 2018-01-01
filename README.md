@@ -1,5 +1,6 @@
 ## 我的博客
-  这里记录我工作学习中写的一些项目，学习内容，读书笔记等   
+  这里记录我工作学习中写的一些项目，学习内容，读书笔记等  
+  
 [使用R语言进行探索性数据分析](https://github.com/jiangwenjing/Blog/issues/5) 
 
   **node express jade webpack react mysql mongondb相关**  
