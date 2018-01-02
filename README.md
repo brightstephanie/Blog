@@ -1,7 +1,7 @@
 ## 我的博客
   这里记录我工作学习中写的一些项目，学习内容等   
   
-  **数据分析、机器学习、深度学习相关** [Repository](https://github.com/jiangwenjing/data-analysis)
+ **数据分析、机器学习、深度学习相关** [Repository](https://github.com/jiangwenjing/data-analysis)
   
 [手动实现决策树机器学习模型](https://jiangwenjing.github.io/data-analysis/MLP0_titanic_survival_exploration-master/titanic_survival_exploration.html)   [代码](https://github.com/jiangwenjing/data-analysis/tree/master/MLP0_titanic_survival_exploration-master)   
 
