@@ -29,7 +29,9 @@
 
 [AB测试](https://jiangwenjing.github.io/data-analysis/DAP4_ABtest/ABtest.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAP4_ABtest)
 
-[电影数据集使用Tableau进行可视化](https://public.tableau.com/profile/.65474781#!/vizhome/_14366/Q1) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAP3_tableau)
+[电影数据集使用Tableau进行可视化](https://public.tableau.com/profile/.65474781#!/vizhome/_14366/Q1) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAP3_tableau)   
+
+[对LendingClub数据集使用集成学习方法构建金融反欺诈模型](https://jiangwenjing.github.io/data-analysis/LendingClub/LendingClub.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/LendingClub)
 
 **前端node express jade webpack react mysql mongondb相关**  [Repository](https://github.com/jiangwenjing/node)
   
