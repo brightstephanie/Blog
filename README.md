@@ -15,7 +15,7 @@
 
 [用TFlearn进行情感分析](https://jiangwenjing.github.io/data-analysis/tflearn-sentiment-analysis-solution/TFLearn_Sentiment_Analysis_Solution.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/tflearn-sentiment-analysis-solution)   
 
-[使用RNN进行情感分析](https://github.com/jiangwenjing/data-analysis/blob/master/sentiment-rnn/Sentiment_RNN_Solution.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/sentiment-rnn)
+[使用RNN进行情感分析](https://jiangwenjing.github.io/data-analysis/sentiment-rnn/Sentiment_RNN_Solution.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/sentiment-rnn)
 
 [使用神经网络预测每日自行车租客人数](https://jiangwenjing.github.io/data-analysis/DLP1_first-neural-network/Your_first_neural_network.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DLP1_first-neural-network)   
 
