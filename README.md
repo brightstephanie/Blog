@@ -31,7 +31,7 @@
 
 [电影数据集使用Tableau进行可视化](https://public.tableau.com/profile/.65474781#!/vizhome/_14366/Q1) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAP3_tableau)
 
-  **前端node express jade webpack react mysql mongondb相关**  [Repository](https://github.com/jiangwenjing/node)
+**前端node express jade webpack react mysql mongondb相关**  [Repository](https://github.com/jiangwenjing/node)
   
   [node+express+jade+echarts+mysql实现数据可视化](https://github.com/jiangwenjing/Blog/issues/1)  [代码](https://github.com/jiangwenjing/node/tree/master/charts)
   
