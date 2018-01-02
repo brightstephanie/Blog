@@ -19,9 +19,9 @@
 
 [使用神经网络预测每日自行车租客人数](https://jiangwenjing.github.io/data-analysis/DLP1_first-neural-network/Your_first_neural_network.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DLP1_first-neural-network)   
 
-[使用R语言进行探索性数据分析](https://github.com/jiangwenjing/Blog/issues/5) 
-     
-[影响红葡萄酒品质的化学成分探索](https://jiangwenjing.github.io/data-analysis/DAAP2_EDA/projectTemplate.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAAP2_EDA)   
+[使用R语言进行探索性数据分析](https://github.com/jiangwenjing/Blog/issues/5)    
+
+[影响红葡萄酒品质的化学成分探索](https://jiangwenjing.github.io/data-analysis/DAAP2_EDA/projectTemplate.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAAP2_EDA)  
 
 [使用pyton对OpenStreetMap地图数据进行清洗](https://jiangwenjing.github.io/data-analysis/DAAP1_osm/osm.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAAP1_osm)
 
