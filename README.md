@@ -17,10 +17,10 @@
 
 [使用RNN进行情感分析](https://github.com/jiangwenjing/data-analysis/blob/master/sentiment-rnn/Sentiment_RNN_Solution.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/sentiment-rnn)
 
-[使用神经网络预测每日自行车租客人数](https://jiangwenjing.github.io/data-analysis/DLP1_first-neural-network/Your_first_neural_network.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DLP1_first-neural-network)   
-  
-[使用R语言进行探索性数据分析](https://github.com/jiangwenjing/Blog/issues/5)    
+[使用神经网络预测每日自行车租客人数](https://jiangwenjing.github.io/data-analysis/DLP1_first-neural-network/Your_first_neural_network.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DLP1_first-neural-network)   
 
+[使用R语言进行探索性数据分析](https://github.com/jiangwenjing/Blog/issues/5) 
+     
 [影响红葡萄酒品质的化学成分探索](https://jiangwenjing.github.io/data-analysis/DAAP2_EDA/projectTemplate.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAAP2_EDA)   
 
 [使用pyton对OpenStreetMap地图数据进行清洗](https://jiangwenjing.github.io/data-analysis/DAAP1_osm/osm.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAAP1_osm)
@@ -31,7 +31,7 @@
 
 [电影数据集使用Tableau进行可视化](https://public.tableau.com/profile/.65474781#!/vizhome/_14366/Q1) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/DAP3_tableau)
 
-  **node express jade webpack react mysql mongondb相关**  [Repository](https://github.com/jiangwenjing/node)
+  **前端node express jade webpack react mysql mongondb相关**  [Repository](https://github.com/jiangwenjing/node)
   
   [node+express+jade+echarts+mysql实现数据可视化](https://github.com/jiangwenjing/Blog/issues/1)  [代码](https://github.com/jiangwenjing/node/tree/master/charts)
   
