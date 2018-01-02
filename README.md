@@ -5,7 +5,7 @@
   
 [手动实现决策树机器学习模型](https://jiangwenjing.github.io/data-analysis/MLP0_titanic_survival_exploration-master/titanic_survival_exploration.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/MLP0_titanic_survival_exploration-master)   
 
-[波士顿房价预测](https://jiangwenjing.github.io/data-analysis/MLP1_boston_housing-master/boston_housing.html) [代码](https://jiangwenjing.github.io/data-analysis/MLP1_boston_housing-master)   
+[波士顿房价预测](https://jiangwenjing.github.io/data-analysis/MLP1_boston_housing-master/boston_housing.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/MLP1_boston_housing-master)   
 
 [为慈善机构寻找捐助者](https://jiangwenjing.github.io/data-analysis/MLP2_finding_donors-master/finding_donors.html) [代码](https://github.com/jiangwenjing/data-analysis/tree/master/MLP2_finding_donors-master)   
 
